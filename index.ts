@@ -38,3 +38,25 @@ let numbers: Array<number> = [1, 2, 3, 4, 5];
 let booleans: Array<boolean> = [true, false, true, false];
 
 let listStudent: Array<Student> = [sv1, sv2, { name: "Nguyen Van C", age: 22 }];
+
+// function type ~ mô tả tham số và kết quả trả về của function (params , return)
+
+/**
+ * 
+  function name(): return_type {
+  }
+ */
+function sayHello(name: string) {
+  console.log(" name:", name);
+}
+
+sayHello("Nguyen Van A"); //ok
+// sayHello(123); // lỗi => name phải là string
+
+function sum(a: number, b: number): [number, number] {
+  //   return a + b;
+  //   return "yes";
+  return [2, 2];
+}
+sum(1, 2); // ok
+// sum("1", 2); // lỗi => a phải là number
