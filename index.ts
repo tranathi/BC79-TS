@@ -60,3 +60,18 @@ function sum(a: number, b: number): [number, number] {
 }
 sum(1, 2); // ok
 // sum("1", 2); // lỗi => a phải là number
+
+// union type => tạo 1 biến có thể chứa nhiều kiểu dữ liệu khác nhau
+
+// number | string
+
+let idMovie: number | string = 123;
+idMovie = "123";
+ 
+//idMovie = true;
+
+// any type => không kiểm tra kiểu dữ liệu
+
+let someValue: any = 123;
+someValue = "123";
+someValue = true;
